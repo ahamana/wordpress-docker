@@ -1,6 +1,6 @@
 services:
   wordpress:
-    image: wordpress:6.3
+    image: wordpress:6.7
     container_name: wordpress
     ports:
       - 80:80
