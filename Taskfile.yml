@@ -1,0 +1,15 @@
+version: 3
+
+tasks:
+  default:
+    cmd: task -a
+    silent: true
+
+  up:
+    cmd: docker compose up -d {{.CLI_ARGS}}
+
+  down:
+    cmd: docker compose down {{.CLI_ARGS}}
+
+  logs:
+    cmd: docker compose logs -f {{.CLI_ARGS}}
