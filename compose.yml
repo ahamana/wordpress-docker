@@ -1,7 +1,7 @@
 services:
   wordpress:
-    image: wordpress:6.8
     container_name: wordpress
+    image: wordpress:6.8
     ports:
       - published: 80
         target: 80
@@ -20,8 +20,8 @@ services:
         condition: service_healthy
 
   db:
-    image: mysql:lts
     container_name: mysql
+    image: mysql:lts
     ports:
       - published: 3306
         target: 3306
