@@ -1,7 +1,7 @@
 services:
   wordpress:
     container_name: wordpress
-    image: wordpress:6.8
+    image: wordpress:6.9
     ports:
       - published: 80
         target: 80
